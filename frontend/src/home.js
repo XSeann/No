@@ -6,7 +6,7 @@ const Home = () => {
 
     useEffect(() =>  {
       const getPdf = async () => {
-          const response = await fetch('http://localhost:6500/api/file')
+          const response = await fetch('https://pdfjs-wphm.onrender.com/api/file')
           const json = await response.json()
           setAllPdf(json)
 

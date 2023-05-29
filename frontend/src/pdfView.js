@@ -11,7 +11,7 @@ const PdfView = () => {
 
     useEffect(() => {
         const getOneData = async () => {
-            const response = await fetch(`http://localhost:6500/api/file/${id.id}`)
+            const response = await fetch(`https://pdfjs-wphm.onrender.com/api/file/${id.id}`)
             const json = await response.json()
             setOneFile(json)
         }

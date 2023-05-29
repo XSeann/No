@@ -31,7 +31,7 @@ const MyPdfViewer = () => {
 
   const uploadFile = async (e) => {
     e.preventDefault()
-    const response = await fetch('http://localhost:6500/api/file', {
+    const response = await fetch('https://pdfjs-wphm.onrender.com/api/file', {
         method: 'POST',
         headers: {'Content-Type': 'application/json'},
         body: JSON.stringify({pdf: file})
